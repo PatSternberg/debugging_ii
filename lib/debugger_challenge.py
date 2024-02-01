@@ -17,7 +17,3 @@ class LetterCounter:
                 most_common_count = counter[char]
         return [most_common_count, most_common]
     
-
-counter = LetterCounter("Digital Punk")
-result = counter.calculate_most_common()
-print(result)
