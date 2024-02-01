@@ -12,3 +12,15 @@ class VowelRemover:
                 self.text = self.text[:i] + self.text[i+1:]
             i += 1
         return self.text
+
+
+new_text = 'aeiou'
+new_text_length = len(new_text)
+vowels = ["a", "e", "i", "o", "u"]
+i = 0
+while i < new_text_length:
+    if new_text[-1].lower() in vowels:
+        new_text = new_text[:i] + new_text[i+1:]
+    i += 1
+print(new_text)
+
